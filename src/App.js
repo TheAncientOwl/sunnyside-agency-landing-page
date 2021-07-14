@@ -18,6 +18,8 @@ export default function App() {
     <Container>
       <Header />
 
+      <div id='content' />
+
       <TransformYourBrand />
       <StandOutTheRightAudience />
 

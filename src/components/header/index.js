@@ -13,6 +13,7 @@ import {
   MobileMenu,
 } from './HeaderElements';
 import HamburgerIconSrc from '../../images/icon-hamburger.svg';
+const Scroll = require('react-scroll');
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,21 @@ export default function Header() {
       <NavButton>contact</NavButton>
     </>
   );
+
+  const scrollToContent = () => {
+    const element = document.getElementById('content');
+    if (!element) {
+      console.error(`Cannot find element with id content`);
+      return;
+    }
+
+    Scroll.animateScroll.scrollTo(element.offsetTop, {
+      duration: 1200,
+      delay: 100,
+      smooth: true,
+      offset: 50,
+    });
+  };
 
   return (
     <Container>
@@ -44,7 +60,7 @@ export default function Header() {
 
       <Title>we are creatives</Title>
 
-      <ArrowContainer>
+      <ArrowContainer onClick={scrollToContent}>
         <Arrow />
       </ArrowContainer>
     </Container>
