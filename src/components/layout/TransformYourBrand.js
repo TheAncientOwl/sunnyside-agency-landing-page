@@ -3,7 +3,7 @@ import { ImageTransform } from '../Images';
 
 export default function TransformYourBrand() {
   return (
-    <Grid>
+    <Grid reversed>
       <TextBox>
         <TextBoxTitle>Transform your brand</TextBoxTitle>
         <TextBoxParagraph>

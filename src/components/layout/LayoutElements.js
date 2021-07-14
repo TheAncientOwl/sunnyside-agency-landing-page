@@ -1,11 +1,26 @@
 import styled, { css } from 'styled-components';
 import Colors from '../../Colors';
+import Breakpoints from '../../Breakpoints';
 
 export const Grid = styled.div(
-  ({ double }) => css`
+  ({ double, reversed }) => css`
     display: grid;
     grid-template-columns: ${double ? '25% 25% 25% 25%' : '50% 50%'};
     height: ${double ? '30vw' : '40vw'};
+
+    @media (max-width: ${Breakpoints.sm}) {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: ${reversed ? 'column-reverse' : 'column'};
+
+      ${double &&
+      css`
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        min-height: 100vw;
+      `};
+    }
   `
 );
 
@@ -17,7 +32,12 @@ export const TextBox = styled.div`
   justify-content: space-around;
   align-items: flex-start;
 
-  overflow: auto;
+  @media (max-width: ${Breakpoints.sm}) {
+    flex: 1;
+    padding: 4em;
+    min-height: 35%;
+    outline: 1px solid red;
+  }
 `;
 
 export const TextBoxTitle = styled.div`
@@ -26,6 +46,13 @@ export const TextBoxTitle = styled.div`
   font-weight: bold;
   padding-right: 2.5em;
   color: ${Colors.darkDesaturatedBlue};
+
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 5vw;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 0;
+  }
 `;
 
 export const TextBoxParagraph = styled.div`
@@ -34,6 +61,12 @@ export const TextBoxParagraph = styled.div`
   line-height: 1.5em;
   max-width: 60ch;
   color: ${Colors.darkGrayBlue2};
+
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 3vw;
+    margin-bottom: 1em;
+    text-align: center;
+  }
 `;
 
 export const TextBoxLink = styled.a`
@@ -70,10 +103,18 @@ export const TextBoxLink = styled.a`
       transition: 0.3s ease-out;
     }
   }
+
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 3.3vw;
+    margin: 0 auto;
+  }
 `;
 
 export const ImageBox = styled.div`
   position: relative;
+  @media (max-width: ${Breakpoints.sm}) {
+    flex: 3;
+  }
 `;
 
 export const ImageText = styled.div(
@@ -84,6 +125,10 @@ export const ImageText = styled.div(
     transform: translateX(-50%);
     text-align: center;
     color: ${color || 'red'};
+
+    @media (max-width: ${Breakpoints.sm}) {
+      font-size: 0.65em;
+    }
   `
 );
 
