@@ -5,8 +5,6 @@ import { FlexBox, TextBox, ImageBox } from './components/LayoutElements';
 import Testimonials from './components/testimonials';
 import Footer from './components/footer';
 
-import BottomImagesConfig from './BottomImagesConfig';
-
 const Container = styled.div``;
 
 export default function App() {
@@ -14,27 +12,30 @@ export default function App() {
     <Container>
       <Header />
 
-      <ImageBox />
+      <ImageBox></ImageBox>
 
       <FlexBox>
         <TextBox></TextBox>
-        <ImageBox />
+        <ImageBox></ImageBox>
       </FlexBox>
 
       <FlexBox>
         <TextBox></TextBox>
-        <ImageBox />
+        <ImageBox></ImageBox>
       </FlexBox>
 
       <FlexBox>
         <ImageBox></ImageBox>
-        <ImageBox />
+        <ImageBox></ImageBox>
       </FlexBox>
 
       <Testimonials />
 
       <FlexBox>
-        {[BottomImagesConfig.map((item, index) => <ImageBox key={index} src={item.src} alt={item.alt} />)]}
+        <ImageBox></ImageBox>
+        <ImageBox></ImageBox>
+        <ImageBox></ImageBox>
+        <ImageBox></ImageBox>
       </FlexBox>
 
       <Footer />
