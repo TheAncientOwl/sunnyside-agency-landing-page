@@ -1,3 +1,6 @@
+@import url('https://fonts.google.com/specimen/Barlow');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -5,4 +8,5 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Fraunces', sans-serif;
 }

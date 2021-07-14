@@ -12,8 +12,6 @@ export default function App() {
     <Container>
       <Header />
 
-      <ImageBox></ImageBox>
-
       <FlexBox>
         <TextBox></TextBox>
         <ImageBox></ImageBox>
