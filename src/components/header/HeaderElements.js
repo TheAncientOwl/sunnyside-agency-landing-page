@@ -85,14 +85,15 @@ export const Title = styled.div`
   letter-spacing: 0.125em;
   font-weight: bold;
   color: ${Colors.white};
-  font-size: 4em;
+  font-size: 4.45vw;
   text-align: center;
-  margin-top: 1.7em;
+  margin-top: 9vh;
+  margin-bottom: 15vh;
 `;
 
 export const ArrowContainer = styled.div`
-  margin: 6em auto 0 auto;
-  width: 2.7em;
+  margin: 0 auto;
+  width: 4.5vh;
 `;
 
 export const Arrow = styled.img`
