@@ -1,16 +1,21 @@
 {
   "files": {
     "main.css": "/sunnyside-agency-landing-page/static/css/main.810721f5.chunk.css",
-    "main.js": "/sunnyside-agency-landing-page/static/js/main.40cf9890.chunk.js",
-    "main.js.map": "/sunnyside-agency-landing-page/static/js/main.40cf9890.chunk.js.map",
+    "main.js": "/sunnyside-agency-landing-page/static/js/main.cb4d622c.chunk.js",
+    "main.js.map": "/sunnyside-agency-landing-page/static/js/main.cb4d622c.chunk.js.map",
     "runtime-main.js": "/sunnyside-agency-landing-page/static/js/runtime-main.9e6f8ee4.js",
     "runtime-main.js.map": "/sunnyside-agency-landing-page/static/js/runtime-main.9e6f8ee4.js.map",
-    "static/js/2.49907763.chunk.js": "/sunnyside-agency-landing-page/static/js/2.49907763.chunk.js",
-    "static/js/2.49907763.chunk.js.map": "/sunnyside-agency-landing-page/static/js/2.49907763.chunk.js.map",
+    "static/js/2.4f677b87.chunk.js": "/sunnyside-agency-landing-page/static/js/2.4f677b87.chunk.js",
+    "static/js/2.4f677b87.chunk.js.map": "/sunnyside-agency-landing-page/static/js/2.4f677b87.chunk.js.map",
     "index.html": "/sunnyside-agency-landing-page/index.html",
     "static/css/main.810721f5.chunk.css.map": "/sunnyside-agency-landing-page/static/css/main.810721f5.chunk.css.map",
-    "static/js/2.49907763.chunk.js.LICENSE.txt": "/sunnyside-agency-landing-page/static/js/2.49907763.chunk.js.LICENSE.txt",
+    "static/js/2.4f677b87.chunk.js.LICENSE.txt": "/sunnyside-agency-landing-page/static/js/2.4f677b87.chunk.js.LICENSE.txt",
     "static/media/icon-arrow-down.979ef07a.svg": "/sunnyside-agency-landing-page/static/media/icon-arrow-down.979ef07a.svg",
+    "static/media/icon-facebook.101bd07e.svg": "/sunnyside-agency-landing-page/static/media/icon-facebook.101bd07e.svg",
+    "static/media/icon-hamburger.7764b7eb.svg": "/sunnyside-agency-landing-page/static/media/icon-hamburger.7764b7eb.svg",
+    "static/media/icon-instagram.7d97118a.svg": "/sunnyside-agency-landing-page/static/media/icon-instagram.7d97118a.svg",
+    "static/media/icon-pinterest.fd8b84da.svg": "/sunnyside-agency-landing-page/static/media/icon-pinterest.fd8b84da.svg",
+    "static/media/icon-twitter.23df5d42.svg": "/sunnyside-agency-landing-page/static/media/icon-twitter.23df5d42.svg",
     "static/media/image-gallery-cone.461ff421.jpg": "/sunnyside-agency-landing-page/static/media/image-gallery-cone.461ff421.jpg",
     "static/media/image-gallery-cone.fb0906a7.jpg": "/sunnyside-agency-landing-page/static/media/image-gallery-cone.fb0906a7.jpg",
     "static/media/image-gallery-milkbottles.df1d9d84.jpg": "/sunnyside-agency-landing-page/static/media/image-gallery-milkbottles.df1d9d84.jpg",
@@ -28,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9e6f8ee4.js",
-    "static/js/2.49907763.chunk.js",
+    "static/js/2.4f677b87.chunk.js",
     "static/css/main.810721f5.chunk.css",
-    "static/js/main.40cf9890.chunk.js"
+    "static/js/main.cb4d622c.chunk.js"
   ]
 }
