@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import ImgHeaderDesktopSrc from '../../images/desktop/image-header.jpg';
 import LogoSrc from '../../images/logo.svg';
 import Colors from '../../Colors';
 import ArrowSrc from '../../images/icon-arrow-down.svg';
+import Breakpoints from '../../Breakpoints';
 
 export const Container = styled.div`
   background-size: cover;
@@ -18,6 +19,44 @@ export const Nav = styled.nav`
   font-size: 1.3em;
 `;
 
+export const DesktopLinks = styled.div`
+  margin-left: auto;
+  @media (max-width: ${Breakpoints.md}) {
+    display: none;
+  }
+`;
+
+export const MobileMenuButton = styled.div`
+  margin-left: auto;
+  @media (min-width: ${Breakpoints.md}) {
+    display: none;
+  }
+`;
+
+export const MobileMenu = styled.div(
+  ({ open }) => css`
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translate(-50%);
+
+    background: ${Colors.white};
+    width: 80vw;
+    padding: 2em 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: ${open ? 'flex' : 'none'};
+    border-radius: 1em;
+
+    @media (min-width: ${Breakpoints.md}) {
+      display: none;
+    }
+  `
+);
+
 export const Logo = styled.img`
   content: url(${LogoSrc});
 `;
@@ -29,10 +68,6 @@ export const NavLink = styled.a`
   padding: 0 1em;
   cursor: pointer;
   text-decoration: none;
-
-  :first-of-type {
-    margin-left: auto;
-  }
 
   position: relative;
   ::before {
@@ -58,6 +93,12 @@ export const NavLink = styled.a`
       transform-origin: bottom left;
     }
   }
+
+  @media (max-width: ${Breakpoints.md}) {
+    color: ${Colors.darkGrayBlue2};
+    margin-bottom: 1em;
+    font-size: 3vw;
+  }
 `;
 
 export const NavButton = styled.a`
@@ -77,6 +118,11 @@ export const NavButton = styled.a`
   :hover {
     color: ${Colors.white};
     background-color: ${Colors.softRed};
+  }
+
+  @media (max-width: ${Breakpoints.md}) {
+    background-color: ${Colors.yellow};
+    padding: 1em 2em;
   }
 `;
 
