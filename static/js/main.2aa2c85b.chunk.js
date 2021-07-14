@@ -1,0 +1,2 @@
+(this["webpackJsonpsunnyside-agency-landing-page"]=this["webpackJsonpsunnyside-agency-landing-page"]||[]).push([[0],{10:function(n,e,t){"use strict";t.r(e);var i=t(1),c=t.n(i),s=t(3),r=t.n(s),o=t(0);function a(){return Object(o.jsx)("div",{style:{textAlign:"center",marginTop:"20x",fontSize:"25px"},children:"~ Hello world! ~"})}t(9);r.a.render(Object(o.jsx)(c.a.StrictMode,{children:Object(o.jsx)(a,{})}),document.getElementById("root"))},9:function(n,e,t){}},[[10,1,2]]]);
+//# sourceMappingURL=main.2aa2c85b.chunk.js.map
