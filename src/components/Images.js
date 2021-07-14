@@ -1,9 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const Image = styled.img`
-  width: 100%;
-  display: block;
-`;
+const Image = styled.div(
+  ({ src }) => css`
+    background-image: url(${src});
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  `
+);
 
 import ImgHeaderDesktopSrc from '../images/desktop/image-header.jpg';
 import ImgHeaderMobileSrc from '../images/mobile/image-header.jpg';
